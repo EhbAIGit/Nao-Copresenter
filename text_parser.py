@@ -66,21 +66,30 @@ def save_parsed_text(text, directory='parsed_texts'):
 
     # List all files in the directory that match the naming pattern
     files = [f for f in os.listdir(directory) if f.startswith('parsed_text') and f.endswith('.txt')]
-    
-    # Sort files to find the highest numbered file
-    files.sort()
+
+    # Extract numbers and sort files based on these numbers
+    files.sort(key=lambda x: int(x.replace('parsed_text', '').replace('.txt', '')))
+
+    # Determine the new file name based on the highest numbered file
     last_file = files[-1] if files else 'parsed_text0.txt'
-    
-    # Extract the number from the last file and increment it for the new file
     last_number = int(last_file.replace('parsed_text', '').replace('.txt', ''))
     new_file = f'parsed_text{last_number + 1}.txt'
-    
+
     full_path = os.path.join(directory, new_file)
-    
+
     with open(full_path, 'w') as file:
         file.write(text)
 
     print(f'File saved as {new_file}')
+
+def parse_text(sentences):
+    parsed_text = ""
+    parsed_sentences_list = []
+    for sentence in sentences:
+        parsed_sentence = replace_bracket_contents(sentence)
+        parsed_text += parsed_sentence + "\n"
+        parsed_sentences_list.append(parsed_sentence)
+    return parsed_sentences_list, parsed_text
 
 class CustomLoader(yaml.SafeLoader):
     def construct_scalar(self, node):
@@ -113,12 +122,14 @@ if __name__ == "__main__":
     llm_response = load_yaml('llm_response.yaml') 
     sentences = tokenize_sentences(llm_response['response6'])
 
-    parsed_text = ""
-    for sentence in sentences:
-        parsed_sentence = replace_bracket_contents(sentence)
-        print(parsed_sentence)
-        parsed_text += parsed_sentence + "\n"
-    
+    # parsed_text = ""
+    # for sentence in sentences:
+    #     parsed_sentence = replace_bracket_contents(sentence)
+    #     print(parsed_sentence)
+    #     parsed_text += parsed_sentence + "\n"
+
+
+    _, parsed_text = parse_text(sentences)
     save_parsed_text(parsed_text)
 
     
