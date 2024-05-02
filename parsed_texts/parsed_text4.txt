@@ -1,0 +1,7 @@
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Thinking_2) \pau=1000\ ^mode(disabled) Staying fit, now that's an important question.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Explain_3) \pau=1000\ ^mode(disabled) It involves both eating healthy and exercising regularly.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/ShowSky_2) \pau=1000\ ^mode(disabled) Start with simple activities like walking or stretching.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/ShowFloor_1) \pau=1000\ ^mode(disabled) Gradually, you can try more intensive exercises.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Yes_2) \pau=1000\ ^mode(disabled) Remember, consistency is key to staying fit.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/CalmDown_3) \pau=1000\ ^mode(disabled) Don't rush the process; take it step by step.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Enthusiastic_5) \pau=1000\ ^mode(disabled) And find activities that you truly enjoy!

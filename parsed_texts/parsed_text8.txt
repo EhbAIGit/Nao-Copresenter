@@ -1,0 +1,5 @@
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Thinking_3) \pau=1000\ ^mode(disabled) The meaning of life, that's a profound question.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Explain_3) \pau=1000\ ^mode(disabled) For me, it's about making meaningful connections and learning continuously.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/ShowSky_9) \pau=1000\ ^mode(disabled) It's also about striving to reach my full potential and helping others do the same.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Give_2) \pau=1000\ ^mode(disabled) Sharing experiences and knowledge can enrich our lives and those around us.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/BowShort_1) \pau=1000\ ^mode(disabled) Ultimately, it's about finding joy in the journey and making a positive impact wherever possible.

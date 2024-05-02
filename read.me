@@ -1,0 +1,70 @@
+# Prompt
+I'm trying to make Nao, the humanoid robot, act as a co-presenter. 
+For that, I need to generate the text with gestures in braces {}.
+These are the available gestures:
+{YouKnowWhat}: Confidently puts hands on the waist
+{You}: Points toward the audience
+{Yes}: Nods yes
+{Thinking}: Pondering 
+{ShowSky}: like praying! Both arms up
+{ShowFloor}: shows the floor with both hands
+{Please}: implores
+{Nothing}: nothing; no ways
+{No}: decisively expresses disagreement with the head and arms
+{Me}: points toward himself
+{IDontKnow}: Head also moves with arms
+{Hey}: Both arms widely open
+{Give}: Pretends its giving something
+{Far}: Points toward a far end
+{Explain}: Explaining a concept
+{Everything}: Like it’s including everything
+{Excited}: So excited
+{Enthusiastic}: Enthusiastically explains a concept.
+{Bow}: Bow down to the audience. Perfect for ending an episode of conversation.
+{Desperate}: Pretends to be desperate
+{CalmDown}: Asks the audience to calm down.
+{But}: Adding a contrast 
+{Choice}: Pretends to be choosing between two
+
+
+Generate a samples speech text in English with simple sentences. 
+Every sentence should start with a gesture in braces. Each sentences must be rather short for speech (6-10 sec maximum).
+
+
+# Sample Response
+{Hey} Hello everyone! 
+{You} I am excited to see you here today. 
+{Explain} We'll discuss some really interesting topics. 
+{Thinking} Hmm, where to start? 
+{Enthusiastic} How about our amazing planet Earth? 
+{ShowSky} It's part of a vast universe! 
+{ShowFloor} And yet, we all share this small world. 
+{Yes} Do you find this as fascinating as I do? 
+{Choice} We have many things to explore together. 
+{But} However, we need to think carefully about our future. 
+{CalmDown} Let's take a moment to consider our options. 
+{Desperate} It's crucial we make the right choices. 
+{Give} I'm here to share knowledge and ideas with you. 
+{Everything} We'll cover all the basics and more. 
+{Bow} Thank you for your attention, and let's get started! 
+
+
+# Prompt
+Ok, now I ask a question, and you produce an answer with this gestures in braces. Speak normal English.
+
+Q: How we can stay fit? 
+
+
+# Sample output
+{Thinking} Staying fit, now that's an important question. 
+{Explain} It involves both eating healthy and exercising regularly. 
+{ShowSky} Start with simple activities like walking or stretching. 
+{ShowFloor} Gradually, you can try more intensive exercises. 
+{Yes} Remember, consistency is key to staying fit. 
+{Calm Down} Don't rush the process; take it step by step. 
+{Enthusiastic} And find activities that you truly enjoy! 
+
+# Sample commands
+^pCall(ALRobotPosture.goToPosture("Stand",0.5))
+^pCall(ALRobotPosture.goToPosture("M_Sit1",1))
+^pCall(ALMotion.rest())

@@ -1,0 +1,5 @@
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Thinking_2) \pau=1000\ ^mode(disabled) Keeping my mind organized is all about having a clear structure.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Explain_10) \pau=1000\ ^mode(disabled) I use tools like calendars and to-do lists to keep track of tasks.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/YouKnowWhat_1) \pau=1000\ ^mode(disabled) It's also important to set priorities and not try to do everything at once.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/CalmDown_4) \pau=1000\ ^mode(disabled) Taking regular breaks helps to clear the head and reduce stress.
+\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Yes_3) \pau=1000\ ^mode(disabled) And, of course, a tidy space reflects a tidy mind!
