@@ -1,14 +1,4 @@
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/You_2) \pau=1000\ ^mode(disabled) Hello everyone, thanks for joining us today!
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Enthusiastic_5) \pau=1000\ ^mode(disabled) We are here to explore some amazing advancements in technology.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Explain_3) \pau=1000\ ^mode(disabled) First, let's discuss the latest trends in artificial intelligence.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Thinking_1) \pau=1000\ ^mode(disabled) What implications do these developments have for our future?
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/YouKnowWhat_5) \pau=1000\ ^mode(disabled) It's crucial to understand the ethics involved.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Choice_1) \pau=1000\ ^mode(disabled) We can choose to use AI for good or for less noble causes.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/But_1) \pau=1000\ ^mode(disabled) However, there's always a balance that needs to be maintained.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/ShowSky_1) \pau=1000\ ^mode(disabled) Imagine a world where technology uplifts everyone.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/ShowFloor_1) \pau=1000\ ^mode(disabled) Now, think of the opposite, where it doesn't.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/IDontKnow_4) \pau=1000\ ^mode(disabled) It's hard to predict everything, isn't it?
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Yes_3) \pau=1000\ ^mode(disabled) But one thing is certain: innovation is not slowing down.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Excited_1) \pau=1000\ ^mode(disabled) I'm so excited to see where we'll go from here!
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Give_3) \pau=1000\ ^mode(disabled) Let's give our best efforts to shape a positive future.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/BowShort_1) \pau=1000\ ^mode(disabled) Thank you all for your attention and participation today!
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/Hey_2) \pau=1000\  [ters] Welcome everyone!
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/Explain_10) \pau=1000\  \mrk=4004\ If you have questions, just ask.
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/ShowSky_1) \pau=1000\  \mrk=4007\ Our potential is as high as the sky!
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/BowShort_1) \pau=1000\  \mrk=4001\ Thank you for being here!

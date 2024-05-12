@@ -49,16 +49,77 @@ def get_random_choice(gesture):
         selected_choice = random.choices(choices, weights)[0]
         return f"{speech_controls_markers} ^start(animations/Stand/Gestures/{selected_choice}) {pause_marker} {mode_marker}"
     
-def replace_bracket_contents(text):
-    pattern = r'\{([^}]+)\}'
+# def replace_bracket_contents(text):
+#     # pattern for replacing content within braces
+#     pattern = r'\{([^}]+)\}'
+
+#     # pattern for replacing content within brackets; sentiments
+#     pattern_sentiment = re.findall(r'\[.*?\]', text)
+
+#     # Dictionary mapping the bracketed text to specific values
+#     sentiments_dic = {
+#         '[Happy]': '\\mrk=4001\\',
+#         '[Sad]': '\\mrk=4002\\',
+#         '[Humor]': '\\mrk=4003\\',
+#         '[Info]': '\\mrk=4004\\',
+#         '[Ponder]': '\\mrk=4005\\',
+#         '[Privacy]': '\\mrk=4006\\',
+#         '[Learning]': '\\mrk=4007\\'
+#     }
     
-    def replacement(match):
+#     def replacement(match):
+#         gesture = match.group(1)  # Extract the gesture within the braces
+#         return get_random_choice(gesture)
+
+#     # First Process each sentiment match
+#     if pattern_sentiment != []:
+#         for sentiment in pattern_sentiment:
+#             if sentiment in sentiments_dic:
+#                 sentiment_replaced_text = text.replace(sentiment, sentiments_dic[sentiment])
+#             else:
+#                 sentiment_replaced_text = text
+#     else:
+#         sentiment_replaced_text = text
+
+
+#     # Then process each gesture match
+#     replaced_text = re.sub(pattern, replacement, sentiment_replaced_text)
+#     return replaced_text
+
+
+def replace_bracket_contents(text):
+    # Dictionary mapping the bracketed text to specific values
+    sentiments_dic = {
+        '[happy]': '\\mrk=4001\\',
+        '[sad]': '\\mrk=4002\\',
+        '[humor]': '\\mrk=4003\\',
+        '[info]': '\\mrk=4004\\',
+        '[ponder]': '\\mrk=4005\\',
+        '[privacy]': '\\mrk=4006\\',
+        '[learning]': '\\mrk=4007\\'
+    }
+    
+    # Function to replace sentiments based on the dictionary
+    def replace_sentiments(match):
+        # return sentiments_dic.get(match.group(0), match.group(0))
+        normalized_sentiment = match.group(0).lower()   # making it case insensitive
+        return sentiments_dic.get(normalized_sentiment, '')  # this removes the bracket and its content if it's not in the dictionary
+        return sentiments_dic.get(match.group(0), '')  
+
+    # Replace sentiments first
+    text = re.sub(r'\[.*?\]', replace_sentiments, text)
+
+    # Function to handle content within braces (assuming you need some specific replacement logic here)
+    def replace_braces(match):
         gesture = match.group(1)  # Extract the gesture within the braces
         return get_random_choice(gesture)
 
-    # Replace all occurrences in the text using the replacement function
-    replaced_text = re.sub(pattern, replacement, text)
-    return replaced_text
+
+    # Replace content within braces
+    text = re.sub(r'\{([^}]+)\}', replace_braces, text)
+
+    return text
+
 
 def save_parsed_text(text, directory='parsed_texts'):
     # Ensure the directory exists
@@ -109,7 +170,7 @@ if __name__ == "__main__":
     default_contextual = True
 
     # Sample input text with gestures in braces
-    input_text = """{Thinking} Staying fit, now that's an important question. 
+    input_text = """{Thinking} Staying fit, now that's an important question [happy]. 
     {Explain} It involves both eating healthy and exercising regularly. 
     {ShowSky} Start with simple activities like walking or stretching. 
     {ShowFloor} Gradually, you can try more intensive exercises. 
@@ -120,7 +181,7 @@ if __name__ == "__main__":
     sentences = tokenize_sentences(input_text)
 
     llm_response = load_yaml('llm_response.yaml') 
-    sentences = tokenize_sentences(llm_response['response6'])
+    sentences = tokenize_sentences(llm_response['response9'])
 
     # parsed_text = ""
     # for sentence in sentences:

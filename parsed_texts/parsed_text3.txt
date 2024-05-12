@@ -1,7 +1,4 @@
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Thinking_5) \pau=1000\ ^mode(disabled) Staying fit, now that's an important question.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Explain_3) \pau=1000\ ^mode(disabled) It involves both eating healthy and exercising regularly.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/ShowSky_9) \pau=1000\ ^mode(disabled) Start with simple activities like walking or stretching.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/ShowFloor_1) \pau=1000\ ^mode(disabled) Gradually, you can try more intensive exercises.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Yes_2) \pau=1000\ ^mode(disabled) Remember, consistency is key to staying fit.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/CalmDown_3) \pau=1000\ ^mode(disabled) Don't rush the process; take it step by step.
-\rspd=70\ \vol=100\ ^start(animations/Stand/Gestures/Enthusiastic_5) \pau=1000\ ^mode(disabled) And find activities that you truly enjoy!
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/Hey_2) \pau=1000\  \mrk=4001\ Welcome everyone!
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/Explain_1) \pau=1000\  \mrk=4004\ If you have questions, just ask.
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/ShowSky_9) \pau=1000\  \mrk=4007\ Our potential is as high as the sky!
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/BowShort_1) \pau=1000\  \mrk=4001\ Thank you for being here!

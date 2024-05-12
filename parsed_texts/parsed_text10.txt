@@ -1,5 +1,4 @@
-\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/Thinking_2) \pau=1000\  Handling stress effectively is key to maintaining good health.
-\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/Explain_3) \pau=1000\  I start by identifying the sources of stress and addressing them directly.
-\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/YouKnowWhat_1) \pau=1000\  Regular exercise and proper sleep are fundamental in managing stress levels.
-\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/Please_1) \pau=1000\  Don't underestimate the power of talking to someone about your worries.
-\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/CalmDown_3) \pau=1000\  And remember, taking time to relax and enjoy life is crucial.
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/Hey_2) \pau=1000\   Welcome everyone!
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/Explain_11) \pau=1000\   If you have questions, just ask.
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/ShowSky_1) \pau=1000\   Our potential is as high as the sky!
+\rspd=80\ \vol=100\ ^start(animations/Stand/Gestures/BowShort_1) \pau=1000\   Thank you for being here!
